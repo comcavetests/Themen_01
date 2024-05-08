@@ -21,7 +21,8 @@ const prompt2 = require('prompt-sync')({sigint: true});
 const userInput2 = prompt1("und nun gib mir Bitte Deine zweite Zahl damit ich anfangen kann. ");
 const b = parseFloat(userInput2);
 let c = a + b;
+
 console.log("**********************************************************************");
-console.log("              Die Summe aus :" ,a ,"+" ,b ,"ist ", c);
+console.log("                Die Summe aus :" ,a ,"+" ,b ,"ist ", c);
 console.log("**********************************************************************");
 
