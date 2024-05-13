@@ -32,3 +32,11 @@ function outputNames()
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
 
 
+//outputNames2("Jan"); // Argument --> Daten für parameter
+outputNames2("Esther");
+outputNames2("Jan");
+outputNames2();
+
+function outputNames2(firstName) {
+    console.log("Hallo, " + firstName + "!");
+}
