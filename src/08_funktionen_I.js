@@ -7,25 +7,25 @@
 
 // Funktionsrumpf | callee
 // Funktionsdeklaration
-function test() 
-{
-    console.log("Hallo, Esther!");    
-}
+//function test() 
+//{
+ //   console.log("Hallo, Esther!");    
+//}
 
 /***** Funktionen 02a *****/
 // 2a. Parametrisierung + Datenübergabe von INNEN
 //Funktionsaufruf
 //outputNames();
 //Caller
-function outputNames() 
-{
+//function outputNames() 
+//{
     // interne Variable | What happens in VEGAS ...
 
-        let firstName = "jan"; // wird außerhalb des funktionsblocks nicht als firstName definiert!
+      //  let firstName = "jan"; // wird außerhalb des funktionsblocks nicht als firstName definiert!
 
-    console.log("Hallo, " + firstName + "!");
+  //  console.log("Hallo, " + firstName + "!");
 
-}
+//}
 //console.log(firstName); //wird nicht definiert, weil firstName in dem Codeblock von function outputNames definiert wurde und außerhalb nicht!
 
 /***** Funktionen 02b *****/
@@ -37,9 +37,9 @@ function outputNames()
 //outputNames2("Jan");
 //outputNames2();
 
-function outputNames2(firstName) {
-    console.log("Hallo, " + firstName + "!");
-}
+//function outputNames2(firstName) {
+   // console.log("Hallo, " + firstName + "!");
+//}
 
 /***** Funktionen 02c *****/
 // 2c. Mehrere Parameter / Argumente
@@ -49,9 +49,9 @@ function outputNames2(firstName) {
 //const prompt = require('prompt-sync')({sigint: true});
 //outputNames3(prompt("Vorname? : "),prompt("Nachname? : "));
 
-function outputNames3(firstName, familyName) {
-    console.log("Hallo, " + firstName + " " + familyName + "!");
-}
+//function outputNames3(firstName, familyName) {
+ //   console.log("Hallo, " + firstName + " " + familyName + "!");
+//}
 
 
 /***** Funktionen 03a *****/
@@ -61,13 +61,37 @@ function outputNames3(firstName, familyName) {
 
 //refacoring
 
-outputNamesSRP("Max","Mustermann");
-function outputNamesSRP(firstName, familyName) // 
-{   // funktionalität: string composing
-    const GAP = " ";
-    let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
-    // Funktionalität im string zusammengeführt ( output )
-    console.log(outputStr);
-    
-}
+//outputNamesSRP("Max","Mustermann");
 
+//function outputNamesSRP(firstName, familyName) // 
+
+//{   // funktionalität: string composing
+  //  const GAP = " ";
+   // let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
+
+    // Funktionalität im string zusammengeführt ( output )
+   // console.log(outputStr);
+    
+//}
+
+
+/***** Funktionen 03b *****/
+
+// 2. Funktionalität: string output
+
+//output("Hi");
+//output(1);
+//output(true);
+
+//function output(outputData) {
+   // console.log(outputData);
+    
+
+   let outputStr = ("Max","Mustermann")
+
+function getString(firstname, familyName) {
+  const GAP = " ";
+  let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
+return outputStr;
+  
+}
