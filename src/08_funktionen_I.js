@@ -14,10 +14,16 @@ function test()
 
 /***** Funktionen 02a *****/
 // 2a. Parametrisierung + Datenübergabe von INNEN
-
-outputNames();
-
-function outputNames(params) 
+//Funktionsaufruf
+//outputNames();
+//Caller
+function outputNames() 
 {
-console.log("Hallo, Ester!");
+    // interne Variable | What happens in VEGAS ...
+
+        let firstName = "jan"; // wird außerhalb des funktionsblocks nicht als firstName definiert!
+
+    console.log("Hallo, " + firstName + "!");
+
 }
+//console.log(firstName); //wird nicht definiert, weil firstName in dem Codeblock von function outputNames definiert wurde und außerhalb nicht!
