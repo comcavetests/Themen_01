@@ -44,11 +44,30 @@ function outputNames2(firstName) {
 /***** Funktionen 02c *****/
 // 2c. Mehrere Parameter / Argumente
 
-outputNames3("Max","Mustermann")
+//outputNames3("Max","Mustermann")
 
-const prompt = require('prompt-sync')({sigint: true});
-outputNames3(prompt("Vorname? : "),prompt("Nachname? : "));
+//const prompt = require('prompt-sync')({sigint: true});
+//outputNames3(prompt("Vorname? : "),prompt("Nachname? : "));
 
 function outputNames3(firstName, familyName) {
     console.log("Hallo, " + firstName + " " + familyName + "!");
 }
+
+
+/***** Funktionen 03a *****/
+// 03a. Vorbereitung -Trennen der Funktionalitäten
+// Postulat: one function = one job (uncle Bob)
+// SRP single responsibility principle
+
+//refacoring
+
+outputNamesSRP("Max","Mustermann");
+function outputNamesSRP(firstName, familyName) // 
+{   // funktionalität: string composing
+    const GAP = " ";
+    let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
+    // Funktionalität im string zusammengeführt ( output )
+    console.log(outputStr);
+    
+}
+
