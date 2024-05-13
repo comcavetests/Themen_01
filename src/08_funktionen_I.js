@@ -33,10 +33,22 @@ function outputNames()
 
 
 //outputNames2("Jan"); // Argument --> Daten für parameter
-outputNames2("Esther");
-outputNames2("Jan");
-outputNames2();
+//outputNames2("Esther");
+//outputNames2("Jan");
+//outputNames2();
 
 function outputNames2(firstName) {
     console.log("Hallo, " + firstName + "!");
+}
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+
+outputNames3("Max","Mustermann")
+
+const prompt = require('prompt-sync')({sigint: true});
+outputNames3(prompt("Vorname? : "),prompt("Nachname? : "));
+
+function outputNames3(firstName, familyName) {
+    console.log("Hallo, " + firstName + " " + familyName + "!");
 }
