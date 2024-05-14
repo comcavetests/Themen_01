@@ -10,6 +10,8 @@
 4. Ausgabe in Konsole : Check!
 */
 
+const ERROR_STR_DIV = "Division durch 0 nicht Möglich!";
+
 // Module: addition a + b | test:
 //output(add(2,2));
 //output(add(2,-2));
@@ -49,7 +51,7 @@ output(division(0,0));
 
 function division(a,b) {
 	if (b ===0) 
-		return "Durch 0 kann man nicht teilen, du Idiot!!!"
+		return ERROR_STR_DIV;
 	
 	return a / b;
 }
