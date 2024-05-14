@@ -6,47 +6,58 @@
 
 1. Dateneingabe + -überprüfung :  
 2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
+3. Fkt. Grundrechenarten : Check!
 4. Ausgabe in Konsole : Check!
 */
-
+const ERROR_STR_GEN = "Irgendwas ging schief!";
 const ERROR_STR_DIV = "Division durch 0 nicht Möglich!";
 
-// Module: addition a + b | test:
-//output(add(2,2));
-//output(add(2,-2));
-//output(add(2,0));
+//agreement : "+","-","*";"/"
+
+
+
+
+
+function calculator(a,b,op) {
+	switch (op) {
+		case "+": //Addieren
+			return add(a,b);
+	
+		case "-": //Subtraieren
+			return subtraction(a,b);
+	
+		case "*": //Multiplizieren
+			return multiplikation(a,b);
+	
+		case "/": //Dividieren
+		case ":": //Dividieren
+			return division(a,b);
+		default:
+return ERROR_STR_GEN;
+	}
+	
+}
+
+// Module: addition a + b 
 
 function add(a,b) {
 	return a + b;
 }
 
-//Module: subtraction 1 - b | test:
-//output(subtraction(3,2));
-//output(subtraction(3,-2));
-//output(subtraction(3,0));
-//output(subtraction(0,2));
+//Module: subtraction 1 - b 
 
 function subtraction(a , b) {
 	return a - b;
 }
 
-//Module: multiplikation a*b | test:
-//output(multiplikation(3,2));
-//output(multiplikation(3,-2));
-//output(multiplikation(3,0));
+//Module: multiplikation a*b 
+
 
 function multiplikation(a,b) {
 	return a * b;
 }
 
-//Module division a/b |test:
-output(division(4,2));
-output(division(3,2));
-output(division(3,-2));
-output(division(0,2));
-output(division(3,0));
-output(division(0,0));
+//Module division a/b 
 
 
 function division(a,b) {
