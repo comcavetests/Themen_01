@@ -48,9 +48,9 @@ output(division(0,0));
 
 
 function division(a,b) {
-	if (b ===0) {
-		return "Durch 0 kann man nicht teilen!"
-	}
+	if (b ===0) 
+		return "Durch 0 kann man nicht teilen, du Idiot!!!"
+	
 	return a / b;
 }
 
