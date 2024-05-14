@@ -19,25 +19,38 @@ function add(a,b) {
 	return a + b;
 }
 
-//Module: Subtraction 1 - b | test:
-//output(Subtraction(3,2));
-//output(Subtraction(3,-2));
-//output(Subtraction(3,0));
-//output(Subtraction(0,2));
+//Module: subtraction 1 - b | test:
+//output(subtraction(3,2));
+//output(subtraction(3,-2));
+//output(subtraction(3,0));
+//output(subtraction(0,2));
 
-function Subtraction(a , b) {
+function subtraction(a , b) {
 	return a - b;
 }
 
-//Module: Multiplikation a*b | test:
+//Module: multiplikation a*b | test:
+//output(multiplikation(3,2));
+//output(multiplikation(3,-2));
+//output(multiplikation(3,0));
 
-function Multiplikation(a,b) {
+function multiplikation(a,b) {
 	return a * b;
 }
 
-//Module Division a/b |test:
+//Module division a/b |test:
+output(division(4,2));
+output(division(3,2));
+output(division(3,-2));
+output(division(0,2));
+output(division(3,0));
+output(division(0,0));
 
-function Division(a,b) {
+
+function division(a,b) {
+	if (b ===0) {
+		return "Durch 0 kann man nicht teilen!"
+	}
 	return a / b;
 }
 
