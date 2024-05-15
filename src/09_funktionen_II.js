@@ -1,11 +1,14 @@
 
 
 /*** Rechner */
+
+const { get } = require("prompt");
+
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
 1. Dateneingabe + -überprüfung :  
-2. Auswahl Rechenart : 
+2. Auswahl Rechenart : Check!
 3. Fkt. Grundrechenarten : Check!
 4. Ausgabe in Konsole : Check!
 */
@@ -14,9 +17,29 @@ const ERROR_STR_DIV = "Division durch 0 nicht Möglich!";
 
 //agreement : "+","-","*";"/"
 
+const prompt1 = require('prompt-sync')({sigint: true});
+const userInput1 = prompt1();
+const prompt2 = require('prompt-sync')({sigint: true});
+
+const prompt3 = require('prompt-sync')({sigint: true});
 
 
 
+startApp();
+function startApp() {
+	output(calculator(getNumb1(),getNumb2(),getOP()));
+}
+
+function getNumb1(params) {
+	return parseInt(prompt1("Zahl 1:"));
+}
+
+function getNumb2(params) {
+	return parseInt(prompt3("Zahl 2:"));
+}
+function getOP(params) {
+	return prompt2;
+}
 
 function calculator(a,b,op) {
 	switch (op) {
